@@ -1,0 +1,14 @@
+Unit,Type,Machines,Output Unit,Min Operators,Shifts Per Day
+Card Perso,Production,MS-1;MS-2;PT-1;PT-2,Cards,2,3
+PMC,Production,PMC-01;PMC-02;PMC-03;PMC-04;PMC-05;PMC-06;PMC-07;PMC-08;PMC-09;PMC-10;PMC-11;PMC-12;PMC-13;PMC-14;PMC-15;PMC-16,Cards,2,2
+Telco,Production,TEL-1;TEL-2;TEL-3;TEL-4;TEL-5;TEL-6,SIM Cards,2,2
+OC200,Production,OC200-1,Prints,2,2
+SM74,Production,SM74-1,Sheets,2,2
+Mailer Unit,Production,MAILER-1,Mailers,2,2
+CTP Unit,Production,CTP-1;CTP-2;CTP-3;CTP-4,Plates,2,2
+IT,Production,Nano 1610;Nano 9,Prints,2,2
+Business,Department,,Tasks,0,1
+Admin,Department,,Tasks,0,1
+QC,Department,,Inspections,0,1
+Vault,Department,,Transactions,0,1
+Fulfillment,Department,,Orders,0,1
