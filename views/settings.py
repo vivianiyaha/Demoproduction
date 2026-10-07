@@ -36,8 +36,9 @@ with t_staff:
 
 with t_tgt:
     st.caption("Unit row = total target for the unit/department. Machine and Operator rows are optional - "
-               "0 means an equal share of the unit target. Quarterly target = 3 x monthly.")
-    unit = st.selectbox("Unit / Department", org["Unit"].tolist())
+               "0 means an equal share of the unit target. Quarterly target = 3 x monthly. "
+               "Business is scored by KPI, so its targets are entered with each KPI entry.")
+    unit = st.selectbox("Unit / Department", [u for u in org["Unit"] if u not in core.KPI_UNITS])
     full = core.targets_table()
     order = {"Unit": 0, "Machine": 1, "Operator": 2}
     sub = full[full["Unit"] == unit].sort_values("Scope", key=lambda s: s.map(order), kind="stable")
